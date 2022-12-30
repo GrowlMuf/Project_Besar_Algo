@@ -3,3 +3,5 @@ Nama Kelompok:
 - Mufid
 - Riski A
 - Theo
+- Itsar
+- Alfa
