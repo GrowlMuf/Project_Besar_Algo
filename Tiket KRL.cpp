@@ -1,6 +1,35 @@
 #include <iostream>
 using namespace std;
 
+void cikarang(){
+	cout<<"1. Cikarang"<<endl;
+	cout<<"2. Metland Telaga Murni"<<endl;
+	cout<<"3. Cibitung"<<endl;
+	cout<<"4. Tambun"<<endl;
+	cout<<"5. Bekasi Timur"<<endl;
+	cout<<"6. Bekasi"<<endl;
+	cout<<"7. Kranji"<<endl;
+	cout<<"8. Cakung"<<endl;
+	cout<<"9. Klender Baru"<<endl;
+	cout<<"10. Buaran"<<endl;
+	cout<<"11. Klender"<<endl;
+	cout<<"12. Jatinegara"<<endl;
+	cout<<"13. Matraman"<<endl;
+	cout<<"14. Manggarai"<<endl;
+	cout<<"15. Sudirman"<<endl;
+	cout<<"16. Karet"<<endl;
+	cout<<"17. Tanah Abang"<<endl;
+	cout<<"18. Duri"<<endl;
+	cout<<"19. Angke"<<endl;
+	cout<<"20. Kampung Bandan"<<endl;
+	cout<<"21. Rajawali"<<endl;
+	cout<<"22. Kemayoran"<<endl;
+	cout<<"23. Pasar Senen"<<endl;
+	cout<<"24. Gang Sentiong"<<endl;
+	cout<<"25. Kramat"<<endl;
+	cout<<"26. Pondok Jati"<<endl;
+}
+
 void bogor(){
 	cout<<"1. Jakarta Kota"<<endl;
 	cout<<"2. Jayakarta"<<endl;
@@ -79,28 +108,32 @@ void garis(){
 }
 
 int main(){
-	int lin;
+	int lin,st;
 	garis();
+	cout<<"Lin KRL"<<endl;
 	cout<<"1. Line Lngkar Cikarang"<<endl;
 	cout<<"2. Line Bogor"<<endl;
 	cout<<"3. Line Rangkasbitung"<<endl;
 	cout<<"4. Line Tanjung Priok"<<endl;
 	cout<<"5. Line Tanggerang"<<endl;
 	cout<<"Pilih Jalur Kereta : ";cin>>lin;
-	if(lin==2){
+	if(lin==1){
+		cikarang();
+		cout<<"Plih Stasiun Awal : ";cin>>st;
+	}else if(lin==2){
 		bogor();
-		cout<<"Plih Stasiun Awal"<<endl;
+		cout<<"Plih Stasiun Awal : ";cin>>st;
 	}else if(lin==3){
 		rangkasbitung();
-		cout<<"Plih Stasiun Awal"<<endl;
+		cout<<"Plih Stasiun Awal : ";cin>>st;
 	}else if(lin==4){
 		priok();
-		cout<<"Plih Stasiun Awal"<<endl;
+		cout<<"Plih Stasiun Awal : ";cin>>st;
 	}else if(lin==5){
 		tanggerang();
-		cout<<"Plih Stasiun Awal"<<endl;
+		cout<<"Plih Stasiun Awal : ";cin>>st;
 	}else{
-		cout<<"Plihan Tidak Ada"<<endl;
+		cout<<"Plihan Tidak Ada.";cin>>st;
 	}
 	garis();
 	
