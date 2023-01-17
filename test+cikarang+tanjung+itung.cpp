@@ -56,7 +56,7 @@ void bogor(){
 	cout<<"3. Mangga Besar"<<endl;
 	cout<<"4. Sawah Besar"<<endl;
 	cout<<"5. Juanda"<<endl;
-	cout<<"6. Gambir"<<endl;
+	cout<<"6. Gambir(tidak beroperasi)"<<endl;
 	cout<<"7. Gondangdia"<<endl;
 	cout<<"8. Cikini"<<endl;
 	cout<<"9. Manggarai"<<endl;
@@ -66,7 +66,7 @@ void bogor(){
 	cout<<"13. Pasar Minggu Baru"<<endl;
 	cout<<"14. Pasar Minggu"<<endl;
 	cout<<"15. Tanjung Barat"<<endl;
-	cout<<"16. Lentang Agung"<<endl;
+	cout<<"16. Lenteng Agung"<<endl;
 	cout<<"17. Univ. Pancasila"<<endl;
 	cout<<"18. Univ. Indonesia"<<endl;
 	cout<<"19. Pondok Cina"<<endl;
@@ -78,6 +78,15 @@ void bogor(){
 	cout<<"25. Bogor"<<endl;
 	cout<<"26. Cibinong"<<endl;
 	cout<<"27. Nambo"<<endl;
+		Station stations[] = {
+    {"1", 0},{"2", 1.48},{"3", 2.50},{"4", 3.67},{"5", 4.38},
+	{"6", 5.5},{"7", 6.58},{"8", 8.28},{"9", 9.88},{"10", 12.4},
+	{"11", 13.7},{"12", 15.2},{"13", 16.7},{"14", 18.4},{"15", 21.5},
+    {"16", 23.9},{"17", 24.9},{"18", 27.2},{"19", 28.3},{"20", 30.9},
+	{"21", 32.6},{"22", 37.7},{"23", 42.9},{"24", 47.2},{"25", 54.8},
+	{"26", 44.5},{"27", 51.0}
+  };
+
 }
 
 void tanggerang(){
