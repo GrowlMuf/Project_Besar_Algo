@@ -102,6 +102,11 @@ void tanggerang(){
 	cout<<"9. Pesing"<<endl;
 	cout<<"10. Grogol"<<endl;
 	cout<<"11. Duri"<<endl;
+	Station stations[] = {
+    {"1", 0},{"2", 1.6},{"3", 3.6},{"4", 5.4},{"5", 7.9},
+	{"6", 10.4},{"7", 11.6},{"8", 13.9},{"9", 15.5},{"10", 17.6},
+	{"11", 19.2}
+  };
 }
 
 void rangkasbitung(){
