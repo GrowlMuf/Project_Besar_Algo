@@ -100,7 +100,11 @@ void priok(){
 	cout<<"1. Jakarta Kota"<<endl;
 	cout<<"2. Kampung Bandan"<<endl;
 	cout<<"3. Ancol"<<endl;
-	cout<<"4. Tanjung Priok"<<endl;
+	cout<<"4. Tanjung Priok"<<endl;\
+			
+		Station stations[] = {
+    {"1", 0},{"2", 1.364},{"3", 3.549},{"4", 8.115}, 	
+  };
 }
 
 void garis(){
