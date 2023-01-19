@@ -544,7 +544,180 @@ void itung25(){
   cout << "Jarak perjalanan adalah " << sqrt(distance3*distance3) << " KM." << endl;
 }
 
+void itung51(){
+			cout<<"Anda Perlu Transit di Manggarai\n";
+			garis();
+			cout<<" PILIH STASIUN ASAL DAN TUJUAN \n";
+			garis();
+			tanggerang();
+			garis();
+	Station stations[] = {
+    {"1", 0},{"2", 2},{"3", 4},{"4", 5},{"5", 8},
+	{"6", 10},{"7", 12},{"8", 14},{"9", 16},{"10", 18},
+	{"11", 19},};
+  int originIndex, destinationIndex;
+		cout<<"Masukkan Nomor Stasiun Asal: ";
+		cin>>origin;
+	 for (int i = 0; i < 11; i++){
+		if (stations[i].name == origin) {
+      originIndex = i;}}
+      
+		cikarang();
+		Station stations2[] = {
+    {"1", 0},{"2", 4},{"3", 7},{"4", 10},{"5", 15},
+	{"6", 18},{"7", 20},{"8", 23},{"9", 25},{"10", 26},
+	{"11", 29},{"12", 32},{"13", 33},{"14", 34},{"15", 38},
+    {"16", 39},{"17", 41},{"18", 45},{"19", 46},{"20", 43},
+	{"21", 41},{"22", 40},{"23", 38},{"24", 36},{"25", 35},
+	{"26", 32}};
+  garis();
+  	cout<<"Masukkan Nomor Stasiun Akhir: ";
+		cin>>destination;
+	for (int i = 0; i < 26; i++){if (stations2[i].name == destination) {
+      destinationIndex = i;}
+}
+	
+   int distance1 = 19 - stations[originIndex].distance;
+   int distance11= sqrt(distance1*distance1);
+   int distance2 = stations2[destinationIndex].distance - 45;
+   int distance22= sqrt(distance2*distance2);
+   int distance3 = distance11 + distance22;
+  garis();
+  cout << "Jarak perjalanan adalah " << sqrt(distance3*distance3) << " KM." << endl;
+}
+
+void itung52(){
+			cout<<"Anda Perlu Transit di Manggarai\n";
+			garis();
+			cout<<" PILIH STASIUN ASAL DAN TUJUAN \n";
+			garis();
+			tanggerang();
+			garis();
+	Station stations[] = {
+    {"1", 0},{"2", 2},{"3", 4},{"4", 5},{"5", 8},
+	{"6", 10},{"7", 12},{"8", 14},{"9", 16},{"10", 18},
+	{"11", 19},};
+  int originIndex, destinationIndex;
+		cout<<"Masukkan Nomor Stasiun Asal: ";
+		cin>>origin;
+	 for (int i = 0; i < 11; i++){
+		if (stations[i].name == origin) {
+      originIndex = i;}}
+      
+		bogor();
+		Station2 stations2[] = {
+    {"1", 0},{"2", 1},{"3", 3},{"4", 4},{"5", 5},
+	{"6", 6},{"7", 7},{"8", 8},{"9", 10},{"10", 12},
+	{"11", 14},{"12", 15},{"13", 17},{"14", 18},{"15", 22},
+    {"16", 24},{"17", 25},{"18", 27},{"19", 28},{"20", 31},
+	{"21", 33},{"22", 38},{"23", 43},{"24", 47},{"25", 55},
+	{"26", 45},{"27", 51}
+  };
+  garis();
+  	cout<<"Masukkan Nomor Stasiun Akhir: ";
+		cin>>destination;
+	for (int i = 0; i < 27; i++){if (stations2[i].name == destination) {
+      destinationIndex = i;}
+}
+	
+   int distance1 = 19 - stations[originIndex].distance;
+   int distance11= sqrt(distance1*distance1);
+   int distance2 = stations2[destinationIndex].distance - 10;
+   int distance22= sqrt(distance2*distance2);
+   int tambahan  = 6;
+   int distance3 = distance11 + distance22 + tambahan;
+  garis();
+  cout << "Jarak perjalanan adalah " << sqrt(distance3*distance3) << " KM." << endl;
+}
+
+void itung53(){
+			cout<<"Anda Perlu Transit di Manggarai\n";
+			garis();
+			cout<<" PILIH STASIUN ASAL DAN TUJUAN \n";
+			garis();
+			tanggerang();
+			garis();
+	Station stations[] = {
+    {"1", 0},{"2", 2},{"3", 4},{"4", 5},{"5", 8},
+	{"6", 10},{"7", 12},{"8", 14},{"9", 16},{"10", 18},
+	{"11", 19},};
+  int originIndex, destinationIndex;
+		cout<<"Masukkan Nomor Stasiun Asal: ";
+		cin>>origin;
+	 for (int i = 0; i < 11; i++){
+		if (stations[i].name == origin) {
+      originIndex = i;}}
+      
+		rangkasbitung();
+		Station2 stations2[] = {
+    {"1", 0},{"2", 3},{"3", 7},{"4", 13},{"5", 16},
+	{"6", 17},{"7", 22},{"8", 24},{"9", 26},{"10", 28},
+	{"11", 34},{"12", 41},{"13", 44},{"14", 48},{"15", 51},
+    {"16", 53},{"17", 55},{"18", 63},{"19", 72}
+  };
+  garis();
+  	cout<<"Masukkan Nomor Stasiun Akhir: ";
+		cin>>destination;
+	for (int i = 0; i < 19; i++){if (stations2[i].name == destination) {
+      destinationIndex = i;}
+}
+	
+   int distance1 = 19 - stations[originIndex].distance;
+   int distance11= sqrt(distance1*distance1);
+   int distance2 = stations2[destinationIndex].distance - 0;
+   int distance22= sqrt(distance2*distance2);
+   int tambahan  = 4;
+   int distance3 = distance11 + distance22 + tambahan;
+  garis();
+  cout << "Jarak perjalanan adalah " << sqrt(distance3*distance3) << " KM." << endl;
+}
+
+void itung54(){
+			cout<<"Anda Perlu Transit di Manggarai\n";
+			garis();
+			cout<<" PILIH STASIUN ASAL DAN TUJUAN \n";
+			garis();
+			tanggerang();
+			garis();
+	Station stations[] = {
+    {"1", 0},{"2", 2},{"3", 4},{"4", 5},{"5", 8},
+	{"6", 10},{"7", 12},{"8", 14},{"9", 16},{"10", 18},
+	{"11", 19},};
+  int originIndex, destinationIndex;
+		cout<<"Masukkan Nomor Stasiun Asal: ";
+		cin>>origin;
+	 for (int i = 0; i < 11; i++){
+		if (stations[i].name == origin) {
+      originIndex = i;}}
+      
+		priok();
+		Station2 stations2[] = {
+    {"1", 0},{"2", 1},{"3", 4},{"4", 8}, 	
+  };
+  garis();
+  	cout<<"Masukkan Nomor Stasiun Akhir: ";
+		cin>>destination;
+	for (int i = 0; i < 4; i++){if (stations2[i].name == destination) {
+      destinationIndex = i;}
+}
+	
+   int distance1 = 19 - stations[originIndex].distance;
+   int distance11= sqrt(distance1*distance1);
+   int distance2 = stations2[destinationIndex].distance - 1;
+   int distance22= sqrt(distance2*distance2);
+   int tambahan  = 5;
+   int distance3 = distance11 + distance22 + tambahan;
+  garis();
+  cout << "Jarak perjalanan adalah " << sqrt(distance3*distance3) << " KM." << endl;
+}
+
 void itung55(){
+	cout<<"Anda Tidak Perlu Transit\n";
+			garis();
+			cout<<" PILIH STASIUN ASAL DAN TUJUAN \n";
+			garis();
+			tanggerang();
+			garis();
 	Station stations[] = {
     {"1", 0},{"2", 2},{"3", 4},{"4", 5},{"5", 8},
 	{"6", 10},{"7", 12},{"8", 14},{"9", 16},{"10", 18},
@@ -694,24 +867,26 @@ int main(){
 			}
 			
 		case 5:
-			if (preline2==1){cout<<"Anda Perlu Transit di Duri\n";
-			break;
-			}
-			else if(preline2==2){cout<<"Anda Perlu Transit di Duri dan Manggarai\n";
-			break;
-			}
-			else if(preline2==3){cout<<"Anda Perlu Transit di Duri dan Tanah Abang\n";
-			break;
-			}
-			else if(preline2==4){cout<<"Anda Perlu Transit di Duri dan Kampung Bandan\n";
-			break;
-			}
-			else if(preline2==5){cout<<"Anda Tidak Perlu Transit\n";
+			if (preline2==1){
+			itung51();
 			garis();
-			cout<<" PILIH STASIUN ASAL DAN TUJUAN \n";
+			break;
+			}
+			else if(preline2==2){
+			itung52();
 			garis();
-			tanggerang();
+			break;
+			}
+			else if(preline2==3){
+			itung53();
 			garis();
+			break;
+			}
+			else if(preline2==4){
+			itung54();
+			break;
+			}
+			else if(preline2==5){
 			itung55();
 			garis();
 			break;
