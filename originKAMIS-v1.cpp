@@ -192,7 +192,7 @@ void itung12(){
 	{"21", 33},{"22", 38},{"23", 43},{"24", 47},{"25", 55},
 	{"26", 45},{"27", 51}
   };
-  
+  garis();
   	cout<<"Masukkan Nomor Stasiun Akhir: ";
 		cin>>destination;
 	for (int i = 0; i < 27; i++){if (stations2[i].name == destination) {
@@ -202,6 +202,46 @@ void itung12(){
    int distance1 = 34 - stations[originIndex].distance;
    int distance11= sqrt(distance1*distance1);
    int distance2 = stations2[destinationIndex].distance - 9;
+   int distance22= sqrt(distance2*distance2);
+   int distance3 = distance11 + distance22;
+  garis();
+  cout << "Jarak perjalanan adalah " << sqrt(distance3*distance3) << " KM." << endl;
+}
+
+void itung13(){
+	Station stations[] = {
+    {"1", 0},{"2", 4},{"3", 7},{"4", 10},{"5", 15},
+	{"6", 18},{"7", 20},{"8", 23},{"9", 25},{"10", 26},
+	{"11", 29},{"12", 32},{"13", 33},{"14", 34},{"15", 38},
+    {"16", 39},{"17", 41},{"18", 45},{"19", 46},{"20", 43},
+	{"21", 41},{"22", 40},{"23", 38},{"24", 36},{"25", 35},
+	{"26", 32},
+  };
+  int originIndex, destinationIndex;
+		cout<<"Masukkan Nomor Stasiun Asal: ";
+		cin>>origin;
+	 for (int i = 0; i < 26; i++){
+		if (stations[i].name == origin) {
+      originIndex = i;}}
+
+		
+		rangkasbitung();
+		Station2 stations2[] = {
+    {"19", 0},{"18", 10},{"17", 17},{"16", 19},{"15", 22},
+	{"14", 25},{"13", 29},{"12", 31},{"11", 38},{"10", 44},
+	{"9", 47},{"8", 48},{"7", 51},{"6", 55},{"5", 57},
+    {"4", 60},{"3", 66},{"2", 70},{"1", 73}
+  };
+  garis();
+  	cout<<"Masukkan Nomor Stasiun Akhir: ";
+		cin>>destination;
+	for (int i = 0; i < 19; i++){if (stations2[i].name == destination) {
+      destinationIndex = i;}
+}
+	
+   int distance1 = 41 - stations[originIndex].distance;
+   int distance11= sqrt(distance1*distance1);
+   int distance2 = stations2[destinationIndex].distance - 73;
    int distance22= sqrt(distance2*distance2);
    int distance3 = distance11 + distance22;
   garis();
@@ -275,10 +315,19 @@ int main(){
 			break;
 			}
 			else if(preline2==3){cout<<"Anda Perlu Transit di Tanah Abang\n";
+			garis();
+			cout<<" PILIH STASIUN ASAL DAN TUJUAN \n";
+			garis();
+			cikarang();
+			garis();
+		itung13();
+			garis();
+			
 			break;
 			}
 			else if(preline2==4){cout<<"Anda Perlu Transit di Kampung Bandan\n";
 			break;
+			
 			}
 			else if(preline2==5){cout<<"Anda Perlu Transit di Duri\n";
 			break;
