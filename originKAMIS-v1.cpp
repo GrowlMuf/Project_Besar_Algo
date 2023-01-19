@@ -140,6 +140,12 @@ void garis(){
 }
 
 void itung11(){
+			cout<<"Anda Tidak Perlu Transit\n";
+			garis();
+			cout<<" PILIH STASIUN ASAL DAN TUJUAN \n";
+			garis();
+			cikarang();
+			garis();
 	Station stations[] = {
     {"1", 0},{"2", 4},{"3", 7},{"4", 10},{"5", 15},
 	{"6", 18},{"7", 20},{"8", 23},{"9", 25},{"10", 26},
@@ -167,6 +173,12 @@ void itung11(){
 }
 
 void itung12(){
+			cout<<"Anda Perlu Transit di Manggarai\n";
+			garis();
+			cout<<" PILIH STASIUN ASAL DAN TUJUAN \n";
+			garis();
+			cikarang();
+			garis();
 	Station stations[] = {
     {"1", 0},{"2", 4},{"3", 7},{"4", 10},{"5", 15},
 	{"6", 18},{"7", 20},{"8", 23},{"9", 25},{"10", 26},
@@ -209,6 +221,12 @@ void itung12(){
 }
 
 void itung13(){
+			cout<<"Anda Perlu Transit di Tanah Abang\n";
+			garis();
+			cout<<" PILIH STASIUN ASAL DAN TUJUAN \n";
+			garis();
+			cikarang();
+			garis();
 	Station stations[] = {
     {"1", 0},{"2", 4},{"3", 7},{"4", 10},{"5", 15},
 	{"6", 18},{"7", 20},{"8", 23},{"9", 25},{"10", 26},
@@ -292,39 +310,24 @@ int main(){
 	
 	switch(preline1){
 		case 1:
-			if (preline2==1){cout<<"Anda Tidak Perlu Transit\n";
-			garis();
-			cout<<" PILIH STASIUN ASAL DAN TUJUAN \n";
-			garis();
-			cikarang();
-			garis();
+			if (preline2==1){
 		itung11();
 			garis();
 			break;
 			}
 			
-			else if(preline2==2){cout<<"Anda Perlu Transit di Manggarai\n";
-			garis();
-			cout<<" PILIH STASIUN ASAL DAN TUJUAN \n";
-			garis();
-			cikarang();
-			garis();
+			else if(preline2==2){
 		itung12();
 			garis();
-			
 			break;
 			}
-			else if(preline2==3){cout<<"Anda Perlu Transit di Tanah Abang\n";
-			garis();
-			cout<<" PILIH STASIUN ASAL DAN TUJUAN \n";
-			garis();
-			cikarang();
-			garis();
+			
+			else if(preline2==3){
 		itung13();
 			garis();
-			
 			break;
 			}
+			
 			else if(preline2==4){cout<<"Anda Perlu Transit di Kampung Bandan\n";
 			break;
 			
