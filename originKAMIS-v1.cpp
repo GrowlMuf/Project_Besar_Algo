@@ -209,6 +209,30 @@ void itung12(){
   cout << "Jarak perjalanan adalah " << sqrt(distance3*distance3) << " KM." << endl;
 }
 
+void itung55(){
+	Station stations[] = {
+    {"1", 0},{"2", 1.6},{"3", 3.6},{"4", 5.4},{"5", 7.9},
+	{"6", 10.4},{"7", 11.6},{"8", 13.9},{"9", 15.5},{"10", 17.6},
+	{"11", 19.2}
+  };
+		cout<<"Masukkan Nomor Stasiun Asal: ";
+		cin>>origin;
+		cout<<"Masukkan Nomor Stasiun Akhir: ";
+		cin>>destination;
+    int originIndex, destinationIndex;
+  for (int i = 0; i < 11; i++) {
+    if (stations[i].name == origin) {
+      originIndex = i;
+    }
+    if (stations[i].name == destination) {
+      destinationIndex = i;
+    }
+  }
+   int distance = stations[destinationIndex].distance - stations[originIndex].distance;
+  garis();
+  cout << "Jarak perjalanan adalah " << sqrt(distance*distance) << " KM." << endl;
+}
+
 int main(){
 	int preline1, preline2, lin, linakhir, awal, akhir;
 	string origin, destination;
@@ -326,6 +350,13 @@ int main(){
 			break;
 			}
 			else if(preline2==5){cout<<"Anda Tidak Perlu Transit\n";
+			garis();
+			cout<<" PILIH STASIUN ASAL DAN TUJUAN \n";
+			garis();
+			tanggerang();
+			garis();
+			itung55();
+			garis();
 			break;
 			}
 	}
