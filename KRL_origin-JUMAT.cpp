@@ -413,7 +413,7 @@ void itung21(){
 	 for (int i = 0; i < 27; i++){
 		if (stations[i].name == origin) {
       originIndex = i;}}
-	
+	garis();
 		
 		cikarang();
 		Station2 stations2[] = {
@@ -424,8 +424,9 @@ void itung21(){
 	{"21", 41},{"22", 40},{"23", 38},{"24", 36},{"25", 35},
 	{"26", 32},
   };
-  	garis();
+  garis();
   	cout<<"Masukkan Nomor Stasiun Akhir: ";
+	 
 		cin>>destination;
 	for (int i = 0; i < 26; i++){if (stations2[i].name == destination) {
       destinationIndex = i;}
@@ -458,7 +459,7 @@ void itung22(){
 	{"21", 33},{"22", 38},{"23", 43},{"24", 47},{"25", 55},
 	{"26", 45},{"27", 51}
   };
-  garis();
+  		garis();
   		cout<<"Masukkan Nomor Stasiun Asal: ";
 		cin>>origin;
 		cout<<"Masukkan Nomor Stasiun Akhir: ";
@@ -495,7 +496,7 @@ void itung22(){
 	{"21", 33},{"22", 38},{"23", 43},{"24", 47},{"25", 55},
 	{"26", 45},{"27", 51}
   };
-  garis();
+  	garis();
   int originIndex, destinationIndex;
 		cout<<"Masukkan Nomor Stasiun Asal: ";
 		cin>>origin;
@@ -503,7 +504,7 @@ void itung22(){
 		if (stations[i].name == origin) {
       originIndex = i;}}
 
-		
+		garis();
 		rangkasbitung();
 		Station2 stations2[] = {
   {"1", 0},{"2", 3},{"3", 7},{"4", 13},{"5", 16},
@@ -517,7 +518,7 @@ void itung22(){
 	for (int i = 0; i < 19; i++){if (stations2[i].name == destination) {
       destinationIndex = i;}
 }
-	
+
    int distance1 = 10 - stations[originIndex].distance;
    int distance11= sqrt(distance1*distance1);
    int distance2 = stations2[destinationIndex].distance - 0;
@@ -545,14 +546,14 @@ void itung22(){
 	{"21", 33},{"22", 38},{"23", 43},{"24", 47},{"25", 55},
 	{"26", 45},{"27", 51}
   };
-  garis();
+  	garis();
   int originIndex, destinationIndex;
 		cout<<"Masukkan Nomor Stasiun Asal: ";
 		cin>>origin;
 	 for (int i = 0; i < 27; i++){
 		if (stations[i].name == origin) {
       originIndex = i;}}
-
+garis();
 		
 		priok();
 		Station2 stations2[] = {
@@ -591,22 +592,22 @@ void itung25(){
 	{"21", 33},{"22", 38},{"23", 43},{"24", 47},{"25", 55},
 	{"26", 45},{"27", 51}
   };
-  garis();
+  	garis();
   int originIndex, destinationIndex;
 		cout<<"Masukkan Nomor Stasiun Asal: ";
 		cin>>origin;
 	 for (int i = 0; i < 27; i++){
 		if (stations[i].name == origin) {
       originIndex = i;}}
-
+garis();
 		
 		tanggerang();
 		Station2 stations2[] = {
   {"1", 0},{"2", 2},{"3", 4},{"4", 5},{"5", 8},
 	{"6", 10},{"7", 12},{"8", 14},{"9", 16},{"10", 18},
 	{"11", 19}
-  };
-  garis();
+  };garis();
+  
   	cout<<"Masukkan Nomor Stasiun Akhir: ";
 		cin>>destination;
 	for (int i = 0; i < 11; i++){if (stations2[i].name == destination) {
@@ -644,14 +645,14 @@ void itung31(){
 	{"11", 34},{"12", 41},{"13", 44},{"14", 48},{"15", 51},
     {"16", 53},{"17", 55},{"18", 63},{"19", 72}
   };
-  
+  garis();
   int originIndex, destinationIndex;
 		cout<<"Masukkan Nomor Stasiun Asal: ";
 		cin>>origin;
 	 for (int i = 0; i < 19; i++){
 		if (stations[i].name == origin) {
       originIndex = i;}}
-
+garis();
 		
 		cikarang();
 		Station2 stations2[] = {
@@ -696,14 +697,15 @@ void itung32(){
 	{"6", 17},{"7", 22},{"8", 24},{"9", 26},{"10", 28},
 	{"11", 34},{"12", 41},{"13", 44},{"14", 48},{"15", 51},
     {"16", 53},{"17", 55},{"18", 63},{"19", 72}
-  };garis();
+  };
+  garis();
   int originIndex, destinationIndex;
 		cout<<"Masukkan Nomor Stasiun Asal: ";
 		cin>>origin;
 	 for (int i = 0; i < 19; i++){
 		if (stations[i].name == origin) {
 	originIndex = i;}}
-	  	
+	  	garis();
 		bogor();
 		Station2 stations2[] = {
   {"1", 0},{"2", 1},{"3", 3},{"4", 4},{"5", 5},
@@ -712,8 +714,8 @@ void itung32(){
     {"16", 24},{"17", 25},{"18", 27},{"19", 28},{"20", 31},
 	{"21", 33},{"22", 38},{"23", 43},{"24", 47},{"25", 55},
 	{"26", 45},{"27", 51}
-  };
-  garis();
+  };garis();
+  
   	cout<<"Masukkan Nomor Stasiun Akhir: ";
 		cin>>destination;
 	for (int i = 0; i < 27; i++){if (stations2[i].name == destination) {
@@ -747,11 +749,13 @@ void itung33(){
 	{"6", 17},{"7", 22},{"8", 24},{"9", 26},{"10", 28},
 	{"11", 34},{"12", 41},{"13", 44},{"14", 48},{"15", 51},
     {"16", 53},{"17", 55},{"18", 63},{"19", 72}
-  };garis();
+  };
+  garis();
 		cout<<"Masukkan Nomor Stasiun Asal: ";
 		cin>>origin;
 		cout<<"Masukkan Nomor Stasiun Akhir: ";
 		cin>>destination;
+	
     int originIndex, destinationIndex;
   for (int i = 0; i < 19; i++) {
     if (stations[i].name == origin) {
@@ -783,24 +787,25 @@ void itung34(){
 	{"6", 17},{"7", 22},{"8", 24},{"9", 26},{"10", 28},
 	{"11", 34},{"12", 41},{"13", 44},{"14", 48},{"15", 51},
     {"16", 53},{"17", 55},{"18", 63},{"19", 72}
-  };garis();
+  };
+  garis();
   int originIndex, destinationIndex;
 		cout<<"Masukkan Nomor Stasiun Asal: ";
 		cin>>origin;
 	 for (int i = 0; i < 19; i++){
 		if (stations[i].name == origin) {
       originIndex = i;}}
-      
+      garis();
       	priok();
 		Station2 stations2[]  = {
     {"1", 0},{"2", 1},{"3", 4},{"4", 8}, 	
-  };garis();
+  };
   	cout<<"Masukkan Nomor Stasiun Akhir: ";
 		cin>>destination;
 	for (int i = 0; i < 4; i++){if (stations2[i].name == destination) {
       destinationIndex = i;}
 }
-	
+
    int distance1 = 0 - stations[originIndex].distance;
    int distance11= sqrt(distance1*distance1);
    int distance2 = stations2[destinationIndex].distance - 1;
@@ -829,14 +834,15 @@ void itung35(){
 	{"6", 17},{"7", 22},{"8", 24},{"9", 26},{"10", 28},
 	{"11", 34},{"12", 41},{"13", 44},{"14", 48},{"15", 51},
     {"16", 53},{"17", 55},{"18", 63},{"19", 72}
-  };garis();
+  };
+  garis();
   int originIndex, destinationIndex;
 		cout<<"Masukkan Nomor Stasiun Asal: ";
 		cin>>origin;
 	 for (int i = 0; i < 19; i++){
 		if (stations[i].name == origin) {
       originIndex = i;}}
-      
+      garis();
  tanggerang();
 		Station2 stations2[] = {
   {"1", 0},{"2", 2},{"3", 4},{"4", 5},{"5", 8},
@@ -900,7 +906,6 @@ void itung41(){
 	for (int i = 0; i < 26; i++){if (stations2[i].name == destination) {
       destinationIndex = i;}
 }
-	
    int distance1 = 1 - stations[originIndex].distance;
    int distance11= sqrt(distance1*distance1);
    int distance2 = stations2[destinationIndex].distance - 43;
@@ -926,7 +931,7 @@ void itung41(){
 	Station stations[] = {
 		{"1", 0},{"2", 1},{"3", 4},{"4", 8}, 	
   
-  };garis();
+  };
   int originIndex, destinationIndex;
 		cout<<"Masukkan Nomor Stasiun Asal: ";
 		cin>>origin;
@@ -934,7 +939,7 @@ void itung41(){
 		if (stations[i].name == origin) {
       originIndex = i;}}
 
-		
+		garis();
 		bogor();
 		Station2 stations2[] = {
   	{"1", 0},{"2", 1},{"3", 3},{"4", 4},{"5", 5},
@@ -950,7 +955,6 @@ void itung41(){
 	for (int i = 0; i < 27; i++){if (stations2[i].name == destination) {
       destinationIndex = i;}
 }
-	
    int distance1 = 0 - stations[originIndex].distance;
    int distance11= sqrt(distance1*distance1);
    int distance2 = stations2[destinationIndex].distance - 0;
@@ -983,7 +987,7 @@ void itung43(){
 	 for (int i = 0; i < 4; i++){
 		if (stations[i].name == origin) {
       originIndex = i;}}
-      
+      garis();
       	rangkasbitung();
 		Station2 stations2[]  = {
     {"1", 0},{"2", 3},{"3", 7},{"4", 13},{"5", 16},
@@ -1065,7 +1069,7 @@ void itung45(){
 	 for (int i = 0; i < 4; i++){
 		if (stations[i].name == origin) {
       originIndex = i;}}
-      
+      garis();
 		tanggerang();
 	Station2 stations2[] = {
     {"1", 0},{"2", 2},{"3", 4},{"4", 5},{"5", 8},
@@ -1114,7 +1118,7 @@ void itung51(){
 	 for (int i = 0; i < 11; i++){
 		if (stations[i].name == origin) {
       originIndex = i;}}
-      
+      garis();
 		cikarang();
 		Station stations2[] = {
     {"1", 0},{"2", 4},{"3", 7},{"4", 10},{"5", 15},
@@ -1164,7 +1168,7 @@ void itung52(){
 	 for (int i = 0; i < 11; i++){
 		if (stations[i].name == origin) {
       originIndex = i;}}
-      
+      garis();
 		bogor();
 		Station2 stations2[] = {
     {"1", 0},{"2", 1},{"3", 3},{"4", 4},{"5", 5},
